@@ -1,4 +1,6 @@
-# JSX vs JS — Micro-App (Vite + styled-components)
+# JSX vs JS - Micro-App (Vite + styled-components)
+
+![alt text](image.png)
 
 **Live:** https://a2rp.github.io/jsx-vs-js/  
 **Code:** https://github.com/a2rp/jsx-vs-js
