@@ -1,50 +1,36 @@
-# JSX vs JS - Micro-App (Vite + styled-components)
+# JSX vs JS
 
-![alt text](image.png)
+An interactive React micro-app that renders the same UI with JSX and `React.createElement`. Change the shared counter to see both approaches stay in sync.
 
-**Live:** https://a2rp.github.io/jsx-vs-js/  
-**Code:** https://github.com/a2rp/jsx-vs-js
+## Features
 
-A focused demo showing how **JSX** is just syntax sugar for **`React.createElement`**.  
-We render the **same UI** two ways-JSX on the left, `createElement` on the right—and keep them in sync as state changes.
+- Side-by-side JSX and `React.createElement` examples
+- Shared state with increment and reset controls
+- Responsive comparison layout with accessible labels
+- Fixed branded header, icon-only footer links, and go-to-top button
 
-## Why this exists
+## Tech stack
 
--   Build the mental model: JSX → `React.createElement(...)`.
--   See identical UI and behavior from both syntaxes.
--   Use this as a polished baseline (tokens, a11y, styled-components) for future micro-apps.
+React, Vite, styled-components, and react-icons.
 
-## Tech
-
--   React 18
--   Vite
--   styled-components
-
-## Quick Start
+## Run locally
 
 ```bash
-git clone https://github.com/a2rp/jsx-vs-js
-cd jsx-vs-js
-npm i
+npm install
 npm run dev
 ```
 
-## Links
+Build and deploy:
 
-- Portfolio: [https://www.ashishranjan.net](https://www.ashishranjan.net)
-- GitHub: [https://github.com/a2rp](https://github.com/a2rp)
-- CodePen: [https://codepen.io/ash1198](https://codepen.io/ash1198)
-- LinkedIn: [https://www.linkedin.com/in/aashishranjan](https://www.linkedin.com/in/aashishranjan)
-- Facebook: [https://www.facebook.com/theash.ashish/](https://www.facebook.com/theash.ashish/)
-- YouTube: [https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1](https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1)
-- Email: [ash.ranjan09@gmail.com](mailto:ash.ranjan09@gmail.com)
+```bash
+npm run lint
+npm run build
+npm run deploy
+```
 
-## Support
+## Screenshot
 
-- Support: [https://a2rp-donation-page.netlify.app/](https://a2rp-donation-page.netlify.app/)
-- Buy Me A Coffee: [https://buymeacoffee.com/a2rp](https://buymeacoffee.com/a2rp)
-- Patreon: [https://patreon.com/a2rp](https://patreon.com/a2rp)
-<!-- Project links -->
+![JSX vs JS screenshot](screenshot.png)
 
 ## Links
 

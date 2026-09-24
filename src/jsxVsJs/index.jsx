@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FiPlus, FiRefreshCw } from "react-icons/fi";
 import { Styled } from "./styled";
 
 /**
@@ -71,7 +72,7 @@ React.createElement(FancyHello, { label, clicks })`
                     <Styled.Badge>React 18</Styled.Badge>
                     <Styled.Badge>Vite</Styled.Badge>
                     <Styled.Badge>styled-components</Styled.Badge>
-                    <Styled.Badge>JSX ⇄ createElement</Styled.Badge>
+                    <Styled.Badge>JSX + createElement</Styled.Badge>
                 </Styled.Badges>
 
                 <Styled.Actions>
@@ -80,10 +81,10 @@ React.createElement(FancyHello, { label, clicks })`
                         aria-label="Increment demo counter"
                         title="Click to increment"
                     >
-                        Click Me ({clicks})
+                        <FiPlus /> Click Me ({clicks})
                     </Styled.Button>
                     <Styled.Button onClick={() => setClicks(0)} title="Reset counter">
-                        Reset
+                        <FiRefreshCw /> Reset
                     </Styled.Button>
                 </Styled.Actions>
 
@@ -95,7 +96,7 @@ React.createElement(FancyHello, { label, clicks })`
                 <Styled.Footer>
                     Code:&nbsp;
                     <a href="https://github.com/a2rp/jsx-vs-js" target="_blank" rel="noreferrer">github.com/a2rp/jsx-vs-js</a>
-                    &nbsp;• Live:&nbsp;
+                    &nbsp;| Live:&nbsp;
                     <a href="https://a2rp.github.io/jsx-vs-js/" target="_blank" rel="noreferrer">a2rp.github.io/jsx-vs-js</a>
                 </Styled.Footer>
             </Styled.Card>
