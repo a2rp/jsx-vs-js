@@ -1,6 +1,6 @@
 # JSX vs JS
 
-An interactive React micro-app that renders the same UI with JSX and `React.createElement`. Change the shared counter to see both approaches stay in sync.
+An interactive React demo that composes the same UI with JSX and `React.createElement`. Change the shared counter to see both approaches stay in sync. JSX is a syntax extension for describing React elements; `createElement` is a direct API alternative. Build tools can transform JSX through different runtimes, so the example compares equivalent ways to describe elements rather than showing literal compiler output.
 
 ## Features
 

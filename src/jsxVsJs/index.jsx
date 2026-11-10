@@ -6,7 +6,7 @@ import { Styled } from "./styled";
  * JSX vs JS (React.createElement)
  *
  * Goal for beginners:
- * 1) Show that JSX is just syntax sugar that compiles to React.createElement.
+ * 1) Compare JSX with equivalent React.createElement calls.
  * 2) Render the same UI two ways (JSX on the left, createElement on the right).
  * 3) Prove both stay in sync when state changes.
  *
@@ -44,7 +44,7 @@ export default function JsxVsJs() {
         </>
     );
 
-    // Right: createElement syntax (what JSX compiles to)
+    // Right: the equivalent createElement API calls.
     const jsTree =
         React.createElement(
             React.Fragment,
@@ -64,8 +64,9 @@ React.createElement(FancyHello, { label, clicks })`
             <Styled.Card role="region" aria-labelledby="title">
                 <Styled.Title id="title">JSX vs JS</Styled.Title>
                 <Styled.Sub>
-                    JSX is <em>syntax sugar</em> for <code>React.createElement</code>. Both produce the same React
-                    elements and the same UI. Change state below and watch both sides update identically.
+                    JSX is a syntax extension for describing React elements. Here it is compared with equivalent
+                    <code> React.createElement</code> calls, a direct API alternative. Change state below and watch
+                    both sides update identically.
                 </Styled.Sub>
 
                 <Styled.Badges aria-label="Tech">
@@ -81,10 +82,10 @@ React.createElement(FancyHello, { label, clicks })`
                         aria-label="Increment demo counter"
                         title="Click to increment"
                     >
-                        <FiPlus /> Click Me ({clicks})
+                        <FiPlus aria-hidden="true" /> Click Me ({clicks})
                     </Styled.Button>
-                    <Styled.Button onClick={() => setClicks(0)} title="Reset counter">
-                        <FiRefreshCw /> Reset
+                    <Styled.Button type="button" onClick={() => setClicks(0)} title="Reset counter">
+                        <FiRefreshCw aria-hidden="true" /> Reset
                     </Styled.Button>
                 </Styled.Actions>
 
@@ -95,9 +96,9 @@ React.createElement(FancyHello, { label, clicks })`
 
                 <Styled.Footer>
                     Code:&nbsp;
-                    <a href="https://github.com/a2rp/jsx-vs-js" target="_blank" rel="noreferrer">github.com/a2rp/jsx-vs-js</a>
+                    <a href="https://github.com/a2rp/jsx-vs-js" target="_blank" rel="noopener noreferrer">github.com/a2rp/jsx-vs-js</a>
                     &nbsp;| Live:&nbsp;
-                    <a href="https://a2rp.github.io/jsx-vs-js/" target="_blank" rel="noreferrer">a2rp.github.io/jsx-vs-js</a>
+                    <a href="https://a2rp.github.io/jsx-vs-js/" target="_blank" rel="noopener noreferrer">a2rp.github.io/jsx-vs-js</a>
                 </Styled.Footer>
             </Styled.Card>
         </Styled.Wrapper>

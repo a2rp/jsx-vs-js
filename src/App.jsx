@@ -7,7 +7,7 @@ const App = () => {
     return (
         <div id="top">
             <SiteHeader />
-            <div id="comparison"><JsxVsJs /></div>
+            <main id="comparison"><JsxVsJs /></main>
             <div id="notes"><SiteFooter /></div>
             <ScrollToTop />
         </div>

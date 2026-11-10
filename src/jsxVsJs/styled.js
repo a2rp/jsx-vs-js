@@ -109,8 +109,6 @@ const Button = styled.button`
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
         background: #232636;
     }
-    &:active {
-    }
     &:focus-visible {
         outline: none;
         box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.45);
